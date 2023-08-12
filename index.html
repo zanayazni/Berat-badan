@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body >
+    <div>
+      <h1 class="heading1" style="text-align: center;">Kalkulator BMI</h1>
+      <p>Berat Badan ideal adalah impian semua orang.Tidak hanya memiliki bentuk tubuh yang menunjang penampilan,berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana dengan mu? Yuk,hitung sekarang dikalkulator BMI.</p>
+    </div>
+    <div class="content">
+      <div class="gender">
+        <h2>Jenis kelamin</h2>
+        <div class="option">
+          <input type="radio" id="pria" name="gender" value="Pria" />
+          <label for="pria"> Pria </label>
+          <input type="radio" id="wanita" name="gender" value="Wanita" />
+          <label for="wanita"> Wanita </label>
+        </div>
+        <div>
+          <h2>Berat Badan (kg)</h2>
+          <input class="input-box" type="text" id="berat" name="berat" placeholder="Masukkan berat badan" />
+        </div>
+        <h2>Usia (Tahun)</h2>
+        <input class="input-box" type="text" id="usia" name="usia" placeholder="Masukkan Usia" />
+        <h2>Tinggi Badan (cm)</h2>
+        <input class="input-box" type="text" id="tinggi" name="tinggi" placeholder="Masukkan Tinggi Badan" />
+        <div class="button">
+          <button class="hitung-button" onclick="hitungBMI()">Hitung BMI</button>
+          <button class="reset-button" onclick="resetForm()">Reset</button>
+        </div>
+        <div id="hasil"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
